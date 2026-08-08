@@ -1,0 +1,235 @@
+/* Artists page — V10 editorial refinement. Scoped to this page only. */
+.artists-page .page-hero-media img{object-position:42% center;transform:scale(1.01)}
+.artists-page .page-hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.65),rgba(0,0,0,.16) 64%,rgba(0,0,0,.05)),linear-gradient(0deg,rgba(0,0,0,.42),transparent 54%)}
+.artists-page .page-hero-content .lead{max-width:650px;font-size:17px}
+
+.artists-page .page-intro{padding:72px 0 18px}
+.artists-page .page-intro-grid{align-items:start}
+.artists-page .page-intro .eyebrow{font-size:11.5px;color:#4e4a45}
+.artists-page .page-intro .lead{font-size:clamp(34px,3.45vw,54px);max-width:940px}
+
+.artists-page .directory{padding:4px 0 118px}
+.artists-page .directory-tools{margin-bottom:38px;padding:15px 0}
+.artists-page .filter-list{gap:9px}
+.artists-page .filter-button{font-size:10.5px;padding:10px 16px;min-height:38px;transition:background .25s,color .25s,border-color .25s}
+.artists-page .directory-count{font-size:10.5px;color:#77716a}
+.artists-page .directory-grid{gap:54px 24px}
+.artists-page .directory-card:nth-child(3n+2){transform:translateY(24px)}
+.artists-page .directory-card a{display:block}
+.artists-page .directory-card .artist-media{position:relative;background:#f9f7f3;padding:14px;box-shadow:0 12px 34px rgba(36,28,22,.045);overflow:hidden}
+.artists-page .directory-card .artist-media img{width:100%;height:100%;object-fit:contain;background:#fff;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.artists-page .directory-card:nth-child(4) .artist-media img{object-fit:cover;object-position:center;transform:scale(1.16)}
+.artists-page .directory-card:nth-child(4):hover .artist-media img{transform:scale(1.20)}
+.artists-page .directory-card .artist-media::after{content:"View artist  ↗";position:absolute;right:20px;bottom:20px;padding:8px 11px;background:rgba(16,16,16,.9);color:#fff;font-size:9.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:0;transform:translateY(7px);transition:.28s ease}
+.artists-page .directory-card:hover .artist-media::after{opacity:1;transform:none}
+.artists-page .directory-card:hover .artist-media img{transform:scale(1.025)}
+.artists-page .directory-card .artist-info{padding-top:16px;align-items:center}
+.artists-page .directory-card .artist-info h3{font-size:31px}
+.artists-page .directory-card .artist-info span{font-size:10.5px;color:#68625c}
+
+/* Editorial artist focus */
+.artists-page .artist-focus{background:#111;color:#fff;padding:118px 0 126px}
+.artists-page .artist-focus-head{display:grid;grid-template-columns:7fr 4fr;gap:7vw;align-items:end;margin-bottom:52px}
+.artists-page .artist-focus-head .section-title{max-width:760px}
+.artists-page .artist-focus-head .lead{margin:0 0 6px;color:rgba(255,255,255,.66);max-width:470px}
+.artists-page .artist-focus-grid{display:grid;grid-template-columns:minmax(0,7.2fr) minmax(310px,4.8fr);gap:clamp(32px,5vw,80px);align-items:center}
+.artists-page .artist-focus-main{margin:0;overflow:hidden;background:#fff}
+.artists-page .artist-focus-main img{width:100%;height:560px;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.artists-page .artist-focus-main:hover img{transform:scale(1.02)}
+.artists-page .artist-focus-copy{max-width:520px}
+.artists-page .artist-focus-copy .eyebrow{color:#d9a0b6;margin-bottom:14px}
+.artists-page .artist-focus-copy h3{font-family:var(--serif);font-size:clamp(58px,6vw,94px);font-weight:400;line-height:.86;letter-spacing:-.035em;margin:0 0 24px}
+.artists-page .artist-focus-lead{font-size:17px;line-height:1.75;color:rgba(255,255,255,.72);max-width:460px;margin:0 0 28px}
+.artists-page .artist-focus-inset{margin:0 0 26px;width:min(210px,48%);background:#f6f2eb;padding:10px}
+.artists-page .artist-focus-inset img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.artists-page .artist-focus .text-link{color:#fff}
+
+/* Collector guidance: more image-led */
+.artists-page .artists-extended{grid-template-columns:1.18fr .82fr;min-height:700px}
+.artists-page .artists-extended .split-feature-media{min-height:700px}
+.artists-page .artists-extended .split-feature-copy{padding:clamp(52px,6vw,92px)}
+.artists-page .artists-extended .section-title{font-size:clamp(54px,5.5vw,82px);max-width:520px}
+.artists-page .artists-extended .lead{font-size:16.5px;max-width:480px}
+.artists-page .artists-extended .feature-points li{font-size:14px;line-height:1.75}
+
+/* Artists-specific newsletter / motion strip */
+.artists-page .newsletter-copy{max-width:500px}
+.artists-page .artists-marquee{height:175px}
+.artists-page .artists-marquee figure{width:310px}
+.artists-page .artists-marquee img{object-fit:cover}
+
+/* Closing CTA: stronger text-side contrast only on Artists */
+.artists-page .prefooter-artists .prefooter-shade{background:linear-gradient(90deg,rgba(0,0,0,.70),rgba(0,0,0,.28) 54%,rgba(0,0,0,.10)),linear-gradient(0deg,rgba(0,0,0,.26),transparent 64%)}
+.artists-page .prefooter-artists .prefooter-content{max-width:790px}
+.artists-page .prefooter-artists .prefooter-copy{max-width:500px;color:rgba(255,255,255,.82)}
+
+@media(max-width:1180px){
+  .artists-page .directory-card .artist-info h3{font-size:28px}
+  .artists-page .artist-focus-main img{height:500px}
+  .artists-page .artists-extended{grid-template-columns:1.1fr .9fr}
+}
+
+@media(max-width:900px){
+  .artists-page .page-hero-media img{object-position:46% center}
+  .artists-page .directory-grid{grid-template-columns:1fr 1fr;gap:42px 18px}
+  .artists-page .directory-card:nth-child(3n+2){transform:none}
+  .artists-page .directory-card:nth-child(even){transform:translateY(20px)}
+  .artists-page .artist-focus-head{grid-template-columns:1fr;gap:20px}
+  .artists-page .artist-focus-grid{grid-template-columns:1.12fr .88fr;gap:34px}
+  .artists-page .artist-focus-main img{height:460px}
+  .artists-page .artists-extended{grid-template-columns:1fr;min-height:auto}
+  .artists-page .artists-extended .split-feature-media{min-height:520px;height:58vh}
+  .artists-page .artists-extended .split-feature-copy{padding:68px 34px}
+}
+
+@media(max-width:760px){
+  .artists-page .page-hero-media img{object-position:48% center;transform:none}
+  .artists-page .page-intro{padding:58px 0 16px}
+  .artists-page .page-intro .lead{font-size:clamp(31px,10.5vw,44px)}
+  .artists-page .directory{padding-bottom:88px}
+  .artists-page .directory-tools{margin-bottom:28px;align-items:center}
+  .artists-page .filter-button{font-size:9.5px;padding:9px 12px;min-height:36px}
+  .artists-page .directory-grid{gap:34px 12px}
+  .artists-page .directory-card:nth-child(even){transform:translateY(16px)}
+  .artists-page .directory-card .artist-media{padding:9px}
+  .artists-page .directory-card .artist-media::after{display:none}
+  .artists-page .directory-card .artist-info{display:block;padding-top:12px}
+  .artists-page .directory-card .artist-info h3{font-size:24px}
+  .artists-page .directory-card .artist-info span{display:block;margin-top:5px;font-size:9px}
+  .artists-page .artist-focus{padding:82px 0 88px}
+  .artists-page .artist-focus-head{margin-bottom:34px}
+  .artists-page .artist-focus-grid{grid-template-columns:1fr;gap:36px}
+  .artists-page .artist-focus-main img{height:auto;aspect-ratio:4/3}
+  .artists-page .artist-focus-copy{max-width:none}
+  .artists-page .artist-focus-copy h3{font-size:clamp(60px,18vw,82px)}
+  .artists-page .artist-focus-inset{width:42%;min-width:150px}
+  .artists-page .artists-extended .split-feature-media{min-height:420px;height:52vh}
+  .artists-page .artists-extended .split-feature-copy{padding:62px 20px}
+  .artists-page .artists-marquee{height:145px}
+  .artists-page .artists-marquee figure{width:240px}
+}
+
+@media(max-width:430px){
+  .artists-page .directory-grid{grid-template-columns:1fr}
+  .artists-page .directory-card:nth-child(even){transform:none}
+  .artists-page .directory-card .artist-info h3{font-size:27px}
+  .artists-page .artist-focus-main img{aspect-ratio:1/1}
+  .artists-page .artist-focus-inset{width:52%}
+  .artists-page .artists-marquee{height:126px}
+  .artists-page .artists-marquee figure{width:205px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .artists-page .directory-card .artist-media img,.artists-page .artist-focus-main img{transition:none}
+}
+
+
+/* V11 — additional image-led editorial rhythm */
+
+/* Artist Focus now uses a small two-image detail pairing */
+.artists-page .artist-focus-details{display:grid;grid-template-columns:.82fr 1.18fr;gap:12px;align-items:end;margin:0 0 28px;max-width:420px}
+.artists-page .artist-focus-details .artist-focus-inset{width:auto;min-width:0;margin:0;padding:9px}
+.artists-page .artist-focus-inset img{aspect-ratio:4/5;object-fit:cover}
+.artists-page .artist-focus-inset-wide img{aspect-ratio:4/3}
+
+/* Image-rich programme mosaic: open, editorial, non-card layout */
+.artists-page .programme-view{padding:122px 0 132px;background:#f6f2eb;overflow:hidden}
+.artists-page .programme-view-head{display:grid;grid-template-columns:7fr 4fr;gap:7vw;align-items:end;margin-bottom:52px}
+.artists-page .programme-view-head .section-title{max-width:760px}
+.artists-page .programme-view-head .lead{margin:0 0 4px;max-width:470px;color:var(--muted)}
+.artists-page .programme-mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto;gap:16px;align-items:start}
+.artists-page .programme-tile{margin:0;position:relative}
+.artists-page .programme-tile img{width:100%;height:100%;display:block;object-fit:cover;background:#fff;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.artists-page .programme-tile:hover img{transform:scale(1.018)}
+.artists-page .programme-tile figcaption{margin-top:10px;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#6d6760}
+.artists-page .programme-tile-large{grid-column:1/span 5;grid-row:1/span 2}
+.artists-page .programme-tile-large img{aspect-ratio:4/5}
+.artists-page .programme-tile-tall{grid-column:6/span 3;margin-top:62px}
+.artists-page .programme-tile-tall img{aspect-ratio:3/4}
+.artists-page .programme-tile-small{grid-column:9/span 4;margin-top:8px}
+.artists-page .programme-tile-small img{aspect-ratio:4/3}
+.artists-page .programme-tile-wide{grid-column:6/span 4;margin-top:22px}
+.artists-page .programme-tile-wide img{aspect-ratio:1/1}
+.artists-page .programme-tile-accent{grid-column:10/span 3;margin-top:-34px}
+.artists-page .programme-tile-accent img{aspect-ratio:4/5}
+.artists-page .programme-view-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;border-top:1px solid var(--line);margin-top:58px;padding-top:25px}
+.artists-page .programme-view-foot p{margin:0;max-width:650px;color:var(--muted);font-size:14.5px;line-height:1.75}
+
+/* Roster and guidance get a little more air between images and labels */
+.artists-page .directory-card .artist-info{gap:14px}
+.artists-page .artists-extended{border-top:1px solid rgba(16,16,16,.04)}
+
+@media(max-width:1180px){
+  .artists-page .programme-view{padding:105px 0 112px}
+  .artists-page .programme-tile-tall{margin-top:42px}
+  .artists-page .programme-tile-accent{margin-top:-18px}
+}
+
+@media(max-width:900px){
+  .artists-page .programme-view-head{grid-template-columns:1fr;gap:20px;margin-bottom:42px}
+  .artists-page .programme-mosaic{grid-template-columns:repeat(2,1fr);gap:14px}
+  .artists-page .programme-tile:nth-child(n){grid-column:auto;grid-row:auto;margin-top:0}
+  .artists-page .programme-tile-large{grid-column:1/-1}
+  .artists-page .programme-tile-large img{aspect-ratio:16/10}
+  .artists-page .programme-tile-tall img,.artists-page .programme-tile-accent img{aspect-ratio:4/5}
+  .artists-page .programme-tile-small img,.artists-page .programme-tile-wide img{aspect-ratio:4/3}
+  .artists-page .programme-view-foot{align-items:flex-start}
+}
+
+@media(max-width:760px){
+  .artists-page .artist-focus-details{max-width:360px;gap:9px}
+  .artists-page .programme-view{padding:82px 0 88px}
+  .artists-page .programme-view-head{margin-bottom:34px}
+  .artists-page .programme-mosaic{gap:10px}
+  .artists-page .programme-tile figcaption{font-size:8.5px;margin-top:7px}
+  .artists-page .programme-view-foot{display:block;margin-top:40px;padding-top:20px}
+  .artists-page .programme-view-foot .text-link{margin-top:18px}
+}
+
+@media(max-width:430px){
+  .artists-page .artist-focus-details{grid-template-columns:1fr 1fr;max-width:none}
+  .artists-page .programme-mosaic{grid-template-columns:1fr 1fr}
+  .artists-page .programme-tile-large{grid-column:1/-1}
+  .artists-page .programme-tile-large img{aspect-ratio:4/3}
+  .artists-page .programme-tile:nth-child(4){grid-column:1/-1}
+  .artists-page .programme-tile:nth-child(4) img{aspect-ratio:16/10}
+}
+
+
+/* V12 — Artists hero now uses a five-image moving slider */
+.artists-page .page-hero{min-height:82svh}
+.artists-page .page-hero-slider{position:absolute;inset:0;overflow:hidden}
+.artists-page .page-hero-slide{position:absolute;inset:0;opacity:0;transform:scale(1.035);transition:opacity 1.2s ease,transform 7s ease;will-change:opacity,transform}
+.artists-page .page-hero-slide.active{opacity:1;transform:scale(1.085)}
+.artists-page .page-hero-slide img{width:100%;height:100%;object-fit:cover;object-position:center center}
+.artists-page .page-hero-slide:nth-child(1) img{object-position:50% center}
+.artists-page .page-hero-slide:nth-child(2) img{object-position:47% center}
+.artists-page .page-hero-slide:nth-child(3) img{object-position:56% center}
+.artists-page .page-hero-slide:nth-child(4) img{object-position:52% center}
+.artists-page .page-hero-slide:nth-child(5) img{object-position:50% center}
+.artists-page .page-hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.67),rgba(0,0,0,.18) 64%,rgba(0,0,0,.07)),linear-gradient(0deg,rgba(0,0,0,.44),transparent 54%)}
+@media(max-width:900px){.artists-page .page-hero{min-height:76svh}.artists-page .page-hero-slide.active{transform:scale(1.06)}}
+@media(max-width:760px){.artists-page .page-hero{min-height:72svh}.artists-page .page-hero-slide{transform:scale(1.02)}.artists-page .page-hero-slide.active{transform:scale(1.04)}.artists-page .page-hero-slide:nth-child(1) img,.artists-page .page-hero-slide:nth-child(2) img,.artists-page .page-hero-slide:nth-child(3) img,.artists-page .page-hero-slide:nth-child(4) img,.artists-page .page-hero-slide:nth-child(5) img{object-position:54% center}}
+@media(prefers-reduced-motion:reduce){.artists-page .page-hero-slide{transition:opacity .5s;transform:none!important}}
+
+/* V13 — reliability polish for the five-image Artists hero. */
+.artists-page .page-hero-slider{background:#111}
+.artists-page .page-hero-slide{pointer-events:none}
+.artists-page .page-hero-slide img{will-change:transform}
+.artists-page .page-hero-slide.active{z-index:1}
+.artists-page .page-hero-shade,.artists-page .page-hero-content{z-index:2}
+
+
+/* V14 — final Artists hero sequence and crop tuning. */
+.artists-page .page-hero-slide:nth-child(1) img{object-position:52% center}
+.artists-page .page-hero-slide:nth-child(2) img{object-position:43% center}
+.artists-page .page-hero-slide:nth-child(3) img{object-position:52% center}
+.artists-page .page-hero-slide:nth-child(4) img{object-position:56% center}
+.artists-page .page-hero-slide:nth-child(5) img{object-position:50% center}
+@media(max-width:760px){
+  .artists-page .page-hero-slide:nth-child(1) img{object-position:56% center}
+  .artists-page .page-hero-slide:nth-child(2) img{object-position:49% center}
+  .artists-page .page-hero-slide:nth-child(3) img{object-position:55% center}
+  .artists-page .page-hero-slide:nth-child(4) img{object-position:58% center}
+  .artists-page .page-hero-slide:nth-child(5) img{object-position:53% center}
+}

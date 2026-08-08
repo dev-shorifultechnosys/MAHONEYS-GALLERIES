@@ -1,0 +1,275 @@
+
+/* Press / Events page — V15 editorial refinement. Scoped to this page only. */
+.press-events-page .page-hero{min-height:82svh}
+.press-events-page .press-hero-slider{position:absolute;inset:0;overflow:hidden}
+.press-events-page .press-hero-slide{position:absolute;inset:0;opacity:0;transform:scale(1.035);transition:opacity 1.2s ease,transform 7s ease;will-change:opacity,transform}
+.press-events-page .press-hero-slide.active{opacity:1;transform:scale(1.085)}
+.press-events-page .press-hero-slide img{width:100%;height:100%;object-fit:cover;object-position:center center}
+.press-events-page .press-hero-slide:nth-child(1) img{object-position:center 45%}
+.press-events-page .press-hero-slide:nth-child(2) img{object-position:center 48%}
+.press-events-page .press-hero-slide:nth-child(3) img{object-position:center 42%}
+.press-events-page .press-hero-slide:nth-child(4) img{object-position:center 50%}
+.press-events-page .press-hero-slide:nth-child(5) img{object-position:center 50%}
+.press-events-page .page-hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.68),rgba(0,0,0,.20) 65%,rgba(0,0,0,.08)),linear-gradient(0deg,rgba(0,0,0,.45),transparent 54%)}
+.press-events-page .page-hero-content .lead{max-width:690px;font-size:17px}
+
+.press-events-page .current-show{padding:105px 0 92px}
+.press-events-page .current-show-grid{grid-template-columns:1.12fr .88fr;gap:clamp(36px,6vw,88px);align-items:center}
+.press-events-page .current-show-image img{width:100%;height:100%;min-height:540px;object-fit:cover}
+.press-events-page .show-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:24px;padding-top:18px;border-top:1px solid var(--line)}
+.press-events-page .show-meta span{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+.press-events-page .event-list{padding-top:92px}
+.press-events-page .event-card p{font-size:14px;line-height:1.72;color:var(--muted)}
+.press-events-page .event-card h3{line-height:1.02}
+.press-events-page .event-side{gap:18px}
+.press-events-page .event-side .event-card{padding-bottom:8px}
+
+.press-events-page .press-gallery{padding:112px 0 108px}
+.press-events-page .press-photo-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;align-items:start}
+.press-events-page .press-photo-grid figure{margin:0;overflow:hidden;background:#ddd7cf}
+.press-events-page .press-photo-grid img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.press-events-page .press-photo-grid figure:hover img{transform:scale(1.015)}
+.press-events-page .press-photo-grid figure:nth-child(1){grid-column:1/span 4;grid-row:1/span 2}
+.press-events-page .press-photo-grid figure:nth-child(1) img{aspect-ratio:4/5}
+.press-events-page .press-photo-grid figure:nth-child(2){grid-column:5/span 3;margin-top:48px}
+.press-events-page .press-photo-grid figure:nth-child(2) img{aspect-ratio:4/3}
+.press-events-page .press-photo-grid figure:nth-child(3){grid-column:8/span 5}
+.press-events-page .press-photo-grid figure:nth-child(3) img{aspect-ratio:16/10}
+.press-events-page .press-photo-grid figure:nth-child(4){grid-column:5/span 3}
+.press-events-page .press-photo-grid figure:nth-child(4) img{aspect-ratio:1/1}
+.press-events-page .press-photo-grid figure:nth-child(5){grid-column:8/span 5;margin-top:12px}
+.press-events-page .press-photo-grid figure:nth-child(5) img{aspect-ratio:16/9}
+.press-events-page .press-photo-grid figure:nth-child(6){grid-column:1/span 3;margin-top:18px}
+.press-events-page .press-photo-grid figure:nth-child(6) img{aspect-ratio:4/3}
+.press-events-page .press-photo-grid figure:nth-child(7){grid-column:4/span 3;margin-top:18px}
+.press-events-page .press-photo-grid figure:nth-child(7) img{aspect-ratio:4/5}
+.press-events-page .press-photo-grid figure:nth-child(8){grid-column:7/span 3;margin-top:18px}
+.press-events-page .press-photo-grid figure:nth-child(8) img{aspect-ratio:4/3}
+.press-events-page .press-photo-grid figure:nth-child(9){grid-column:10/span 3;margin-top:18px}
+.press-events-page .press-photo-grid figure:nth-child(9) img{aspect-ratio:4/5}
+.press-events-page .press-photo-grid figure:nth-child(10){grid-column:7/span 6;margin-top:14px}
+.press-events-page .press-photo-grid figure:nth-child(10) img{aspect-ratio:16/9}
+
+.press-events-page .press-list{padding:96px 0 104px}
+.press-events-page .press-list .section-head{align-items:end}
+.press-events-page .press-intro{max-width:520px;margin:0;color:var(--muted)}
+.press-events-page .press-row{grid-template-columns:1.05fr 2.8fr 1fr auto;gap:18px 24px;padding:26px 0}
+.press-events-page .press-row>div h3{margin:0 0 7px;font-family:var(--serif);font-size:32px;font-weight:400;line-height:1}
+.press-events-page .press-row>div p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.65;max-width:620px}
+
+.press-events-page .press-extended{grid-template-columns:.92fr 1.08fr;min-height:700px}
+.press-events-page .press-extended .split-feature-media{min-height:700px}
+.press-events-page .press-extended .split-feature-media img{object-position:center center}
+.press-events-page .press-extended .section-title{font-size:clamp(54px,5.2vw,80px);max-width:620px}
+.press-events-page .press-extended .lead{max-width:560px}
+
+.press-events-page .newsletter-copy{max-width:510px}
+.press-events-page .press-marquee{height:175px}
+.press-events-page .press-marquee figure{width:305px}
+.press-events-page .prefooter-press .prefooter-shade{background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.28) 56%,rgba(0,0,0,.12)),linear-gradient(0deg,rgba(0,0,0,.28),transparent 64%)}
+.press-events-page .prefooter-press .prefooter-content{max-width:820px}
+
+@media(max-width:1180px){
+  .press-events-page .current-show-image img{min-height:480px}
+  .press-events-page .press-row>div h3{font-size:29px}
+}
+@media(max-width:900px){
+  .press-events-page .current-show-grid{grid-template-columns:1fr;gap:34px}
+  .press-events-page .current-show-image img{min-height:0;aspect-ratio:16/10}
+  .press-events-page .press-photo-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .press-events-page .press-photo-grid figure:nth-child(n){grid-column:auto;grid-row:auto;margin-top:0}
+  .press-events-page .press-photo-grid figure:nth-child(1),.press-events-page .press-photo-grid figure:nth-child(5),.press-events-page .press-photo-grid figure:nth-child(10){grid-column:1/-1}
+  .press-events-page .press-photo-grid figure:nth-child(n) img{aspect-ratio:4/3}
+  .press-events-page .press-photo-grid figure:nth-child(1) img,.press-events-page .press-photo-grid figure:nth-child(5) img,.press-events-page .press-photo-grid figure:nth-child(10) img{aspect-ratio:16/10}
+  .press-events-page .press-row{grid-template-columns:1fr 2fr auto}
+  .press-events-page .press-row>span:nth-of-type(2){display:none}
+  .press-events-page .press-extended{grid-template-columns:1fr;min-height:auto}
+  .press-events-page .press-extended .split-feature-media{min-height:520px;height:58vh}
+}
+@media(max-width:760px){
+  .press-events-page .page-hero{min-height:72svh}
+  .press-events-page .press-hero-slide{transform:scale(1.02)}
+  .press-events-page .press-hero-slide.active{transform:scale(1.04)}
+  .press-events-page .page-hero-content .lead{font-size:14px}
+  .press-events-page .current-show{padding:78px 0 72px}
+  .press-events-page .event-list{padding-top:76px}
+  .press-events-page .press-gallery{padding:82px 0}
+  .press-events-page .press-photo-grid{gap:7px}
+  .press-events-page .press-list{padding:78px 0}
+  .press-events-page .press-list .section-head{display:block}
+  .press-events-page .press-intro{margin-top:16px}
+  .press-events-page .press-row{grid-template-columns:1fr auto;gap:8px 14px;padding:21px 0}
+  .press-events-page .press-row>span:first-child{grid-column:1}
+  .press-events-page .press-row>div{grid-column:1/-1}
+  .press-events-page .press-row>a{grid-column:2;grid-row:1;align-self:start}
+  .press-events-page .press-row>div h3{font-size:26px}
+  .press-events-page .press-extended .split-feature-media{min-height:420px;height:52vh}
+  .press-events-page .press-extended .split-feature-copy{padding:62px 20px}
+  .press-events-page .press-marquee{height:145px}
+  .press-events-page .press-marquee figure{width:240px}
+}
+@media(max-width:430px){
+  .press-events-page .press-photo-grid{grid-template-columns:1fr 1fr}
+  .press-events-page .press-photo-grid figure:nth-child(1),.press-events-page .press-photo-grid figure:nth-child(5),.press-events-page .press-photo-grid figure:nth-child(10){grid-column:1/-1}
+  .press-events-page .press-marquee{height:126px}
+  .press-events-page .press-marquee figure{width:205px}
+}
+@media(prefers-reduced-motion:reduce){
+  .press-events-page .press-hero-slide{transition:opacity .5s;transform:none!important}
+  .press-events-page .press-photo-grid img{transition:none}
+}
+
+
+/* V16 — final Press / Events spacing and Gallery Journal packing */
+.press-events-page .event-list{padding-bottom:92px}
+.press-events-page .event-card.featured img{object-position:center 46%}
+.press-events-page .event-card .event-date{font-size:11px}
+.press-events-page .event-card h3{font-size:clamp(28px,2.35vw,38px)}
+.press-events-page .event-side .event-card h3{font-size:clamp(24px,1.9vw,31px)}
+.press-events-page .event-side .event-card p{font-size:14.5px}
+
+/* Journal: deliberately packed, no dead lower-left area */
+.press-events-page .press-gallery{padding:106px 0 112px}
+.press-events-page .press-gallery .section-head{margin-bottom:42px}
+.press-events-page .press-journal-layout{display:grid;gap:14px}
+.press-events-page .press-journal-top{display:grid;grid-template-columns:1.18fr .82fr;gap:14px;align-items:stretch}
+.press-events-page .press-journal-top figure,.press-events-page .press-journal-grid figure{margin:0;overflow:hidden;background:#ddd7cf}
+.press-events-page .press-journal-top img,.press-events-page .press-journal-grid img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .7s var(--ease)}
+.press-events-page .press-journal-top figure:hover img,.press-events-page .press-journal-grid figure:hover img{transform:scale(1.015)}
+.press-events-page .journal-lead{min-height:480px}
+.press-events-page .journal-lead img{aspect-ratio:16/10}
+.press-events-page .journal-top-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.press-events-page .journal-top-pair figure{min-height:480px}
+.press-events-page .journal-top-pair img{aspect-ratio:3/4}
+.press-events-page .press-journal-grid{display:grid;grid-template-columns:1fr 1.45fr 1fr 1fr;gap:14px;align-items:stretch}
+.press-events-page .press-journal-grid figure{min-height:260px}
+.press-events-page .press-journal-grid figure img{aspect-ratio:4/3}
+.press-events-page .press-journal-grid .journal-wide{grid-column:span 2}
+.press-events-page .press-journal-grid .journal-wide img{aspect-ratio:16/9}
+
+/* Press desk clarity */
+.press-events-page .press-list{padding:90px 0 98px}
+.press-events-page .press-list .section-head{margin-bottom:34px}
+.press-events-page .press-intro{font-size:15px;line-height:1.75;color:#5f5a54}
+.press-events-page .press-row{padding:30px 0;min-height:126px;align-items:center}
+.press-events-page .press-row>span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#736d66}
+.press-events-page .press-row>div h3{font-size:34px}
+.press-events-page .press-row>div p{font-size:14px}
+.press-events-page .press-row .text-link{font-size:10.5px}
+
+/* Private viewing section uses a quieter, content-matched gallery image */
+.press-events-page .press-extended .split-feature-media img{object-position:center center}
+.press-events-page .press-extended .feature-points li{font-size:14.5px;line-height:1.8}
+
+/* Newsletter is intentionally simple but no longer visually underweight */
+.press-events-page .newsletter{padding-top:84px;padding-bottom:84px}
+.press-events-page .signup-form{border-bottom-color:rgba(16,16,16,.55)}
+.press-events-page .signup-form input{font-size:14px}
+.press-events-page .signup-form button{font-size:10.5px;font-weight:600}
+
+/* Closing event image has its own composition */
+.press-events-page .prefooter-press .prefooter-media img{object-position:center 46%}
+
+@media(max-width:1180px){
+  .press-events-page .journal-lead,.press-events-page .journal-top-pair figure{min-height:420px}
+  .press-events-page .press-journal-grid figure{min-height:230px}
+  .press-events-page .press-row>div h3{font-size:31px}
+}
+@media(max-width:900px){
+  .press-events-page .press-journal-top{grid-template-columns:1fr}
+  .press-events-page .journal-lead{min-height:0}
+  .press-events-page .journal-lead img{aspect-ratio:16/9}
+  .press-events-page .journal-top-pair figure{min-height:0}
+  .press-events-page .journal-top-pair img{aspect-ratio:4/3}
+  .press-events-page .press-journal-grid{grid-template-columns:1fr 1fr}
+  .press-events-page .press-journal-grid .journal-wide{grid-column:1/-1}
+  .press-events-page .press-journal-grid figure{min-height:0}
+  .press-events-page .press-journal-grid figure img{aspect-ratio:4/3}
+  .press-events-page .press-journal-grid .journal-wide img{aspect-ratio:16/9}
+}
+@media(max-width:760px){
+  .press-events-page .event-list{padding-bottom:74px}
+  .press-events-page .event-card .event-date{font-size:9.5px}
+  .press-events-page .event-side .event-card p{font-size:13.5px}
+  .press-events-page .press-gallery{padding:78px 0 84px}
+  .press-events-page .press-gallery .section-head{margin-bottom:30px}
+  .press-events-page .press-journal-layout{gap:8px}
+  .press-events-page .press-journal-top,.press-events-page .journal-top-pair,.press-events-page .press-journal-grid{gap:8px}
+  .press-events-page .press-row{min-height:0;padding:23px 0}
+  .press-events-page .press-row>div h3{font-size:27px}
+  .press-events-page .press-row>div p{font-size:13px}
+  .press-events-page .newsletter{padding-top:70px;padding-bottom:70px}
+}
+@media(max-width:430px){
+  .press-events-page .journal-top-pair{grid-template-columns:1fr 1fr}
+  .press-events-page .press-journal-grid{grid-template-columns:1fr 1fr}
+  .press-events-page .press-journal-grid .journal-wide{grid-column:1/-1}
+}
+
+
+/* V17 — final Press / Events polish */
+/* Keep the first hero image readable and event-led */
+.press-events-page .press-hero-slide:nth-child(1) img{object-position:center 47%}
+
+/* Slightly more readable supporting stories */
+.press-events-page .event-side .event-card h3{font-size:clamp(25px,2vw,32px)}
+.press-events-page .event-side .event-card p{font-size:15px;line-height:1.72;color:#68625c}
+.press-events-page .event-card.featured p{font-size:15px;line-height:1.76;max-width:720px}
+
+/* Gallery Journal: balanced lower composition with a wider final gallery image */
+.press-events-page .press-journal-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;align-items:stretch}
+.press-events-page .press-journal-grid figure{min-height:0;margin:0;overflow:hidden}
+.press-events-page .press-journal-grid figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:auto}
+.press-events-page .press-journal-grid figure:nth-child(1){grid-column:1/span 3;grid-row:1;height:300px}
+.press-events-page .press-journal-grid figure:nth-child(2){grid-column:4/span 6;grid-row:1;height:300px}
+.press-events-page .press-journal-grid figure:nth-child(3){grid-column:10/span 3;grid-row:1;height:300px}
+.press-events-page .press-journal-grid figure:nth-child(4){grid-column:1/span 3;grid-row:2;height:280px}
+.press-events-page .press-journal-grid figure:nth-child(5){grid-column:4/span 4;grid-row:2;height:280px}
+.press-events-page .press-journal-grid figure:nth-child(6){grid-column:8/span 5;grid-row:2;height:280px}
+.press-events-page .press-journal-grid figure:nth-child(7){grid-column:2/span 10;grid-row:3;height:390px;margin-top:2px}
+.press-events-page .press-journal-grid figure:nth-child(7) img{object-position:center 52%}
+
+/* Press utility section: more confident text and actions */
+.press-events-page .press-intro{font-size:16px;line-height:1.78;color:#514d48;max-width:550px}
+.press-events-page .press-row>span{font-size:11.5px;color:#625d57}
+.press-events-page .press-row>div h3{font-size:36px;line-height:1.02}
+.press-events-page .press-row>div p{font-size:14.5px;line-height:1.7;color:#625d57}
+.press-events-page .press-row .text-link{font-size:11.5px;font-weight:600;color:#191919}
+
+/* Newsletter: stronger form visibility without adding visual weight */
+.press-events-page .newsletter-grid{align-items:center}
+.press-events-page .signup-form{border-bottom:1.5px solid rgba(16,16,16,.72)}
+.press-events-page .signup-form input{font-size:14.5px;color:#161616}
+.press-events-page .signup-form input::placeholder{color:#77716b;opacity:1}
+.press-events-page .signup-form button{font-size:11.5px;font-weight:600;letter-spacing:.11em}
+
+@media(max-width:1180px){
+  .press-events-page .press-journal-grid figure:nth-child(1),
+  .press-events-page .press-journal-grid figure:nth-child(2),
+  .press-events-page .press-journal-grid figure:nth-child(3){height:270px}
+  .press-events-page .press-journal-grid figure:nth-child(4),
+  .press-events-page .press-journal-grid figure:nth-child(5),
+  .press-events-page .press-journal-grid figure:nth-child(6){height:250px}
+  .press-events-page .press-journal-grid figure:nth-child(7){height:350px}
+  .press-events-page .press-row>div h3{font-size:32px}
+}
+
+@media(max-width:900px){
+  .press-events-page .press-journal-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .press-events-page .press-journal-grid figure:nth-child(n){grid-column:auto;grid-row:auto;height:auto;margin-top:0}
+  .press-events-page .press-journal-grid figure:nth-child(n) img{aspect-ratio:4/3}
+  .press-events-page .press-journal-grid figure:nth-child(2),
+  .press-events-page .press-journal-grid figure:nth-child(7){grid-column:1/-1}
+  .press-events-page .press-journal-grid figure:nth-child(2) img,
+  .press-events-page .press-journal-grid figure:nth-child(7) img{aspect-ratio:16/9}
+}
+
+@media(max-width:760px){
+  .press-events-page .event-side .event-card p{font-size:13.5px}
+  .press-events-page .press-intro{font-size:14.5px}
+  .press-events-page .press-row>div h3{font-size:28px}
+  .press-events-page .press-row>div p{font-size:13.5px}
+  .press-events-page .signup-form input{font-size:14px}
+  .press-events-page .signup-form button{font-size:10.5px}
+}

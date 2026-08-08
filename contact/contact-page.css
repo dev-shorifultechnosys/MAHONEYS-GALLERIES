@@ -1,0 +1,107 @@
+
+/* Contact page — V24 final refinement. Scoped to Contact only. */
+
+/* Utility area: tighter, clearer, more editorial */
+.contact-page .contact-section{padding:92px 0 0}
+.contact-page .contact-grid{grid-template-columns:3.7fr 8.3fr;gap:6.2vw;align-items:start}
+.contact-page .contact-details{top:104px}
+.contact-page .contact-details>.eyebrow{margin-bottom:10px}
+.contact-page .contact-details-block{padding:18px 0 19px}
+.contact-page .contact-details-block h3{font-size:10.5px;letter-spacing:.15em;margin-bottom:8px;color:#3f3b36}
+.contact-page .contact-details-block p,
+.contact-page .contact-details-block a{font-size:13.5px;line-height:1.72;color:#625d56}
+.contact-page .contact-details-block a:hover{color:var(--wine-dark)}
+
+.contact-page .contact-grid>div>.eyebrow{margin-bottom:14px}
+.contact-page .contact-grid .section-title{font-size:clamp(56px,5.8vw,86px)}
+.contact-page .contact-form{gap:22px 22px;margin-top:22px}
+.contact-page .form-field{gap:7px}
+.contact-page .form-field label{font-size:10.5px;letter-spacing:.145em;color:#46413b}
+.contact-page .form-field input,
+.contact-page .form-field select,
+.contact-page .form-field textarea{font-size:15px;padding:11px 0;border-bottom-color:rgba(16,16,16,.55)}
+.contact-page .form-field textarea{min-height:112px}
+.contact-page .contact-form .button{min-height:52px;padding-inline:22px;font-size:10.5px;margin-top:2px}
+
+/* Location panel: retain strongest visual moment, improve supporting text */
+.contact-page .location-panel{margin-top:78px;grid-template-columns:7.1fr 4.9fr}
+.contact-page .location-copy p{font-size:14.5px;line-height:1.72;color:rgba(255,255,255,.76);max-width:420px}
+.contact-page .location-copy .button{min-height:48px;font-size:10px}
+
+/* Helpful notes: open editorial columns instead of service cards */
+.contact-page .visit-notes{padding:104px 0 108px;background:#e9e3da}
+.contact-page .visit-notes .section-head{margin-bottom:50px;align-items:end}
+.contact-page .visit-notes .section-head .lead{max-width:480px;margin:0 0 5px;color:#625d56;font-size:15px}
+.contact-page .editorial-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(16,16,16,.24)}
+.contact-page .editorial-notes .note-card{background:transparent;border:0;min-height:0;padding:28px 42px 8px 0;margin-right:34px}
+.contact-page .editorial-notes .note-card:not(:last-child){border-right:1px solid rgba(16,16,16,.13)}
+.contact-page .note-number{display:block;font-family:var(--serif);font-size:28px;line-height:1;color:var(--wine);margin-bottom:26px}
+.contact-page .editorial-notes .note-card h3{font-size:34px;line-height:.98;margin:0 0 16px}
+.contact-page .editorial-notes .note-card p{font-size:14px;line-height:1.75;max-width:320px;color:#68625b}
+
+/* Contact-specific newsletter visibility */
+.contact-page .newsletter{padding:100px 0 96px}
+.contact-page .newsletter-copy{font-size:14.5px;line-height:1.72;max-width:470px}
+.contact-page .signup-form{border-bottom-color:rgba(16,16,16,.62);border-bottom-width:1.5px}
+.contact-page .signup-form input{font-size:15px;color:#292622;padding:15px 0}
+.contact-page .signup-form input::placeholder{color:#77716a;opacity:1}
+.contact-page .signup-form button{font-size:10.5px;color:#292622;font-weight:600;letter-spacing:.135em}
+
+/* Closing CTA: keep visitor out of the headline and strengthen text-side contrast */
+.contact-page .prefooter-contact .prefooter-media img{object-position:70% center}
+.contact-page .prefooter-contact .prefooter-shade{background:linear-gradient(90deg,rgba(0,0,0,.75),rgba(0,0,0,.42) 44%,rgba(0,0,0,.10) 72%),linear-gradient(0deg,rgba(0,0,0,.34),transparent 64%)}
+.contact-page .prefooter-contact .prefooter-content{max-width:810px;transform:translate(-14px,-10px)}
+.contact-page .prefooter-contact .prefooter-copy{font-size:15px;line-height:1.75;max-width:520px}
+
+@media(max-width:1100px){
+  .contact-page .contact-grid{grid-template-columns:4fr 8fr;gap:5vw}
+  .contact-page .editorial-notes .note-card{padding-right:26px;margin-right:24px}
+  .contact-page .editorial-notes .note-card h3{font-size:30px}
+}
+
+@media(max-width:900px){
+  .contact-page .contact-section{padding-top:82px}
+  .contact-page .contact-grid{grid-template-columns:1fr;gap:50px}
+  .contact-page .contact-details{position:static;display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px}
+  .contact-page .contact-details>.eyebrow{grid-column:1/-1}
+  .contact-page .contact-details-block{padding:17px 0}
+  .contact-page .location-panel{margin-top:72px}
+  .contact-page .editorial-notes{grid-template-columns:1fr 1fr}
+  .contact-page .editorial-notes .note-card{margin-right:0;padding:28px 28px 24px 0}
+  .contact-page .editorial-notes .note-card:nth-child(2){border-right:0;padding-left:28px}
+  .contact-page .editorial-notes .note-card:last-child{grid-column:1/-1;border-right:0;border-top:1px solid rgba(16,16,16,.13);padding-top:30px}
+}
+
+@media(max-width:760px){
+  .contact-page .contact-section{padding-top:68px}
+  .contact-page .contact-details{grid-template-columns:1fr}
+  .contact-page .contact-details>.eyebrow{grid-column:auto}
+  .contact-page .contact-details-block p,
+  .contact-page .contact-details-block a{font-size:13px}
+  .contact-page .contact-grid .section-title{font-size:clamp(50px,14vw,68px)}
+  .contact-page .contact-form{gap:18px}
+  .contact-page .form-field textarea{min-height:105px}
+  .contact-page .location-panel{margin-top:64px}
+  .contact-page .visit-notes{padding:78px 0 82px}
+  .contact-page .visit-notes .section-head{display:block;margin-bottom:34px}
+  .contact-page .visit-notes .section-head .lead{margin-top:14px}
+  .contact-page .editorial-notes{grid-template-columns:1fr}
+  .contact-page .editorial-notes .note-card,
+  .contact-page .editorial-notes .note-card:nth-child(2),
+  .contact-page .editorial-notes .note-card:last-child{grid-column:auto;border-right:0;border-top:1px solid rgba(16,16,16,.13);padding:25px 0 26px;margin:0}
+  .contact-page .editorial-notes .note-card:first-child{border-top:0}
+  .contact-page .note-number{font-size:24px;margin-bottom:17px}
+  .contact-page .editorial-notes .note-card h3{font-size:30px}
+  .contact-page .editorial-notes .note-card p{font-size:13.5px;max-width:520px}
+  .contact-page .newsletter{padding:78px 0 76px}
+  .contact-page .prefooter-contact .prefooter-media img{object-position:65% center}
+  .contact-page .prefooter-contact .prefooter-content{transform:none}
+}
+
+@media(max-width:430px){
+  .contact-page .contact-details-block h3{font-size:10px}
+  .contact-page .contact-form .button{width:100%}
+  .contact-page .location-copy p{font-size:13.5px}
+  .contact-page .editorial-notes .note-card h3{font-size:28px}
+  .contact-page .prefooter-contact .prefooter-media img{object-position:62% center}
+}
